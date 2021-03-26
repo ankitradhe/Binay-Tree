@@ -33,3 +33,5 @@ void show_stack_inorder(node_t *root);
 void show_stack_preorder(node_t *root);
 
 void show_stack_postorder(node_t *root);
+
+void show_leaf(node_t *root);

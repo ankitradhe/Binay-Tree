@@ -15,6 +15,7 @@ int main()
                 "6. show data in inorder stack\n"
                 "7. show data in preorder stack\n"
                 "8. show data in postorder stack\n"
+                "9. show leaf nodes\n"
                 "Any. to exit\n");
         scanf("%d", &input);
         switch (input) {
@@ -53,6 +54,10 @@ int main()
                 printf("Stack postorder\n");
                 show_stack_postorder(root);
                 printf("NULL\n");
+                break;
+            case 9:
+                printf("Leaf nodes\n");
+                show_leaf(root);
                 break;
             default:
                 goto end;

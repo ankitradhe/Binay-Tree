@@ -160,3 +160,17 @@ void show_stack_postorder(node_t *root)
     show_stack_postorder(root->left);
     return;
 }
+
+void show_leaf(node_t *root)
+{
+    if (NULL == root) {
+        return;
+    }
+
+    if ((NULL == root->left) && (NULL == root->right)) {
+        printf("%d ", root->value);
+    } else {
+        show_leaf(root->left);
+        show_leaf(root->right);
+    }
+}
